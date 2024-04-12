@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Password Generator</h1>
+    <div class="box">
+        <p id="password">P4$$50rd!</p>
+        <button id="copy"><i class="bi bi-copy"></i></button>
+    </div>
+    <div class="box">
+        <div class="slider-label">
+            <label for="length">Character Length</label>
+            <p id="length-text">0</p>
+        </div>
+        <input type="range" name="length" id="length" min="1" max="50">
+        <label for="upper">
+            <input type="checkbox" name="upper" id="upper" checked>
+            Include Uppercase Letters
+        </label>
+        <label for="lower">
+            <input type="checkbox" name="lower" id="lower" checked>
+            Include Lowercase Letters
+        </label>
+        <label for="number">
+            <input type="checkbox" name="number" id="number" checked>
+            Include Numbers
+        </label>
+        <label for="symbol">
+            <input type="checkbox" name="symbol" id="symbol" checked>
+            Include Symbols
+        </label>
+        <div class="strength">
+            <p>Strength</p>
+            <div id="strength-notches"></div>
+        </div>
+        <button id="generate">Generate -></button>
+    </div>
+</body>
+</html>

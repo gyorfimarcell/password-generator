@@ -1,0 +1,110 @@
+:root {
+    --bg-color: #111016;
+    --surface-color: #24232b;
+    --surface-color-2: #18171f;
+    --primary-color: #a4ffaf;
+    --text-color: #e6e5ea;
+    --text-muted-color: #54535b;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    color:  var(--text-color);
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+h1 {
+    color: var(--text-muted-color);
+    font-size: 1.8rem;
+}
+
+.box {
+    display: flex;
+
+    background-color: var(--surface-color);
+    border-radius: 0.1rem;
+    padding: 1.5rem;
+
+    max-width: 500px;
+    width: 100%;
+}
+
+.box:nth-of-type(1) {
+    justify-content: space-between;
+    align-items: center; 
+}
+
+#password {
+    color: var(--text-muted-color);
+    font-size: 2rem;
+    line-break: anywhere;
+}
+
+#password+button {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.box:nth-of-type(2) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.slider-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#length-text {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+input {
+    accent-color: var(--primary-color);
+}
+
+.strength {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--surface-color-2);
+    color: var(--text-muted-color);
+    font-weight: bold;
+    padding: 1.5rem;
+}
+
+#strength-notches {
+    letter-spacing: 0.25rem;
+}
+
+#generate {
+    padding: 1.5rem;
+
+    background-color: var(--primary-color);
+    color: var(--surface-color-2);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
